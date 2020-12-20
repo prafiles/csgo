@@ -4,7 +4,7 @@ ENV TERM xterm
 
 ENV STEAM_DIR /home/steam
 ENV STEAMCMD_DIR /home/steam/steamcmd
-ENV CSGO_APP_ID 740
+ENV CSGO_APP_ID 730
 ENV CSGO_DIR /home/steam/csgo
 
 SHELL ["/bin/bash", "-c"]
