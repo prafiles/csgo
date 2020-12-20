@@ -11,20 +11,20 @@ services:
       RCON_PASSWORD: ${CSGO_RCON_PASSWORD}
       STEAM_ACCOUNT: ${CSGO_STEAM_ACCOUNT}
       AUTHKEY: ${CSGO_AUTH_KEY}
-      SOURCEMOD_ADMINS: comma,delimited,list,of,steam,ids
+      SOURCEMOD_ADMINS: prafiles,vishalculty
       IP: 0.0.0.0
       PORT: 27015
       TV_PORT: 27020
-      TICKRATE: 128
+      TICKRATE: 256
       FPS_MAX: 300
-      GAME_TYPE: 0
+      GAME_TYPE: 2
       GAME_MODE: 1
       MAP: de_dust2
       MAPGROUP: mg_active
       MAXPLAYERS: 12
       TV_ENABLE: 1
-      LAN: 0
-      RETAKES: 0
+      LAN: 1
+      RETAKES: 1
     volumes:
       - csgo-data:/home/steam/csgo
     network_mode: "host"

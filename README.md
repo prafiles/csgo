@@ -19,7 +19,7 @@ Retakes is disabled by default. To enable it, set the environment variable `RETA
 ## How to Use
 
 ```bash
-docker pull kmallea/csgo:latest
+docker pull prafiles/csgo:latest
 ```
 
 To use the image as-is, run it with a few useful environment variables to configure the server:
