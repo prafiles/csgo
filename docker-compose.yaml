@@ -18,13 +18,13 @@ services:
       TICKRATE: 256
       FPS_MAX: 300
       GAME_TYPE: 0
-      GAME_MODE: 1
+      GAME_MODE: 0
       MAP: de_dust2
       MAPGROUP: mg_active
       MAXPLAYERS: 12
       TV_ENABLE: 1
       LAN: 0
-      RETAKES: 1
+      RETAKES: 0
     volumes:
       - csgo-data:/home/steam/csgo
     network_mode: "host"
