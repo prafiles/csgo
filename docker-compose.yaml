@@ -17,13 +17,13 @@ services:
       TV_PORT: 27020
       TICKRATE: 256
       FPS_MAX: 300
-      GAME_TYPE: 2
+      GAME_TYPE: 0
       GAME_MODE: 1
       MAP: de_dust2
       MAPGROUP: mg_active
       MAXPLAYERS: 12
       TV_ENABLE: 1
-      LAN: 1
+      LAN: 0
       RETAKES: 1
     volumes:
       - csgo-data:/home/steam/csgo
