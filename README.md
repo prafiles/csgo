@@ -215,3 +215,7 @@ After building:
 1. Edit the exported environment variables in the `Makefile` to your liking
 2. Run `make server` to start a local LAN server to test
 3. Run `make test` to run tests
+
+### Config Flag explanations
+
+1. [Game Type and Modes](https://developer.valvesoftware.com/wiki/CSGO_Game_Mode_Commands)
