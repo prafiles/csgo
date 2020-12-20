@@ -2,10 +2,11 @@ version: "3.7"
 
 services:
   csgo:
-    image: kmallea/csgo:latest
-    container_name: csgo-ds
+    image: prafiles/csgo:latest
+    container_name: csgo
+    build: .
     environment:
-      SERVER_HOSTNAME: "PUV-CSGO"
+      SERVER_HOSTNAME: "csgo.prakharshukla.com"
       SERVER_PASSWORD: ${CSGO_SERVER_PASSWORD}
       RCON_PASSWORD: ${CSGO_RCON_PASSWORD}
       STEAM_ACCOUNT: ${CSGO_STEAM_ACCOUNT}
