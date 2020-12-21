@@ -16,11 +16,11 @@ services:
       PORT: 27015
       TV_PORT: 27020
       TICKRATE: 256
-      FPS_MAX: 300
-      GAME_TYPE: 0
-      GAME_MODE: 0
-      MAP: de_dust2,de_assault
-      MAPGROUP: mg_active,mg_reserve,mg_hostage
+      FPS_MAX: 120
+      GAME_TYPE: 1
+      GAME_MODE: 2
+      MAP: de_dust2
+      MAPGROUP: mg_active
       MAXPLAYERS: 12
       TV_ENABLE: 1
       LAN: 0
