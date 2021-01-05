@@ -28,7 +28,7 @@ services:
     volumes:
       - csgo-data:/home/steam/csgo
     network_mode: "host"
-    restart: unless-stopped
+    restart: always
     stdin_open: true
     tty: true
 
