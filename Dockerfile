@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:jammy
 
 ENV TERM xterm
 
@@ -14,7 +14,7 @@ ARG STEAMCMD_URL=https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux
 RUN set -xo pipefail \
       && apt-get update \
       && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --no-install-suggests -y \
-          lib32gcc1 \
+          lib32gcc-s1 \
           lib32stdc++6 \
           lib32z1 \
           ca-certificates \
@@ -22,6 +22,7 @@ RUN set -xo pipefail \
           locales \
           curl \
           unzip \
+          libtcmalloc-minimal4 \
       && locale-gen en_US.UTF-8 \
       && adduser --disabled-password --gecos "" steam \
       && mkdir ${STEAMCMD_DIR} \
