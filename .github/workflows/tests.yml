@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  pull_request:
+    branches: [main, master]
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  docker-build:
+    name: Build container image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # Build-only check; the image downloads a dedicated-server install at
+      # runtime (start.sh), so CI verifies the image itself, not the game.
+      # The bats suite in test/ runs inside a live server container.
+      - name: Build image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          tags: csgo-dedicated-server:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
